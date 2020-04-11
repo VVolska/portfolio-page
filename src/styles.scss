@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$my-page2-primary: mat-palette($mat-grey, 900);
+$my-page2-accent: mat-palette($mat-pink, A200, A100, A400);
+$my-page2-warn: mat-palette($mat-red);
+$my-page2-theme: mat-dark-theme($my-page2-primary, $my-page2-accent, $my-page2-warn);
+
+@include angular-material-theme($my-page2-theme);
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+mat-toolbar{
+  opacity: 80%;
+}
+
