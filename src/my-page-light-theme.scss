@@ -1,0 +1,5 @@
+@import '~@angular/material/theming';
+$my-page-light-theme-primary: mat-palette($mat-blue);
+$my-page-light-theme-accent: mat-palette($mat-orange, A200, A100, A400);
+$my-page-light-theme-warn: mat-palette($mat-red);
+$my-page-light-theme: mat-light-theme($my-page-light-theme-primary, $my-page-light-theme-accent, $my-page-light-theme-warn);

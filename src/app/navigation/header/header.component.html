@@ -10,17 +10,21 @@
     <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
         <ul fxLayout fxLayoutGap="15px" class="navigation-items">
             <li>
-                <a routerLink="about-me">About me</a>
+                <button mat-button routerLink="about-me">About me</button>
             </li>
             <li>
-                <a routerLink="skills">Skills</a>
+                <button mat-button routerLink="skills">Skills</button>
             </li>
             <li>
-                <a routerLink="portfolio">Portfolio</a>
+                <button mat-button routerLink="portfolio">Portfolio</button>
             </li>
             <li>
-                <a routerLink="contact">Contact</a>
+                <button mat-button routerLink="contact">Contact</button>
             </li>
+            <li>
+                <button mat-mini-fab color="primary" (click)="changeTheme()"><mat-icon>settings_brightness</mat-icon></button>
+            </li>
+
         </ul>
     </div>
 </mat-toolbar>

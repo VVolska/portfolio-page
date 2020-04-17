@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, HostBinding, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,15 +6,28 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
   @Output() public sidenavToggle = new EventEmitter();
+  @HostBinding('class') componentCssClass;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
   onToggleSidenav() {
     this.sidenavToggle.emit();
+  }
+
+  changeTheme(): void {
+    if (document.body.classList.contains('my-page-dark-theme')) {
+      document.body.classList.remove('my-page-dark-theme');
+      document.body.classList.add('my-page-light-theme');
+    } else if (document.body.classList.contains('my-page-light-theme')) {
+      document.body.classList.remove('my-page-light-theme');
+      document.body.classList.add('my-page-dark-theme');
+    } else {
+      document.body.classList.add('my-page-dark-theme');
+    }
   }
 }
