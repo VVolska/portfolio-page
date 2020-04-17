@@ -13,8 +13,9 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
-@NgModule( {
+@NgModule({
   declarations: [
     AppComponent,
     LayoutComponent,
@@ -32,9 +33,10 @@ import { ContactComponent } from './contact/contact.component';
     MaterialModule,
     FlexLayoutModule,
     AppRoutingModule,
+    ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [ AppComponent ]
-} )
+  bootstrap: [AppComponent]
+})
 export class AppModule {
 }

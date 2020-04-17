@@ -1,14 +1,11 @@
+@import 'my-page-dark-theme';
+@import 'my-page-light-theme';
 @import '~@angular/material/theming';
-
 @include mat-core();
-
-$my-page2-primary: mat-palette($mat-grey, 900);
-$my-page2-accent: mat-palette($mat-pink, A200, A100, A400);
-$my-page2-warn: mat-palette($mat-red);
-$my-page2-theme: mat-dark-theme($my-page2-primary, $my-page2-accent, $my-page2-warn);
-
-@include angular-material-theme($my-page2-theme);
-
+@include angular-material-theme($my-page-light-theme);
+.my-page-dark-theme {
+  @include angular-material-theme($my-page-dark-theme);
+}
 html, body {
   height: 100%;
   margin: 0;
@@ -19,7 +16,6 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-mat-toolbar{
+mat-toolbar {
   opacity: 80%;
 }
-
