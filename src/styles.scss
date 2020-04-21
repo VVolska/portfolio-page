@@ -39,3 +39,11 @@ button:focus{
   //background-color: transparent;
   background-color: #ea80fc;
 }
+.parallax-container{
+  height: 400px;
+}
+.parallax{
+  height: -700px;
+  -webkit-transform: translateY(-30%);
+  transform: translateY(-30%);
+}

@@ -16,5 +16,8 @@ export class ContactComponent implements OnInit {
   ]);
 
   ngOnInit(): void {
+    $(document).ready(() => {
+      $('.parallax').parallax();
+    });
   }
 }
