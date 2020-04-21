@@ -23,10 +23,11 @@ mat-toolbar{
   }
 }
 
-#logo{
-  max-width: 200px;
-  min-width: 100px;
+.logo{
+  max-height: 30px;
+ // min-width: 100%;
   overflow: visible;
   padding-top: 0;
   padding-bottom: 0;
 }
+

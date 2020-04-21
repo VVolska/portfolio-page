@@ -10,6 +10,9 @@ export class PortfolioComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    $(document).ready(() => {
+      $('.parallax').parallax();
+    });
   }
 
 }

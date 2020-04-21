@@ -4,13 +4,16 @@
             <mat-icon>menu</mat-icon>
         </button>
     </div>
-    <div>
-        <a routerLink="/home"><img src="../../../assets/images/logo-tmp.png" id="logo"></a>
+    <div *ngIf="getTheme() == 'my-page-light-theme'; else logo_white">
+        <a routerLink="/home"><img src="../../../assets/images/logo_black.png" class="logo"></a>
     </div>
+    <ng-template #logo_white>
+        <a routerLink="/home"><img src="../../../assets/images/logo_white.png" class="logo"></a>
+    </ng-template>
     <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
         <ul fxLayout fxLayoutGap="15px" class="navigation-items">
             <li>
-                <button mat-button routerLink="about-me">About me</button>
+                <button mat-button routerLink="about-me" color="none">About me</button>
             </li>
             <li>
                 <button mat-button routerLink="skills">Skills</button>
@@ -22,7 +25,9 @@
                 <button mat-button routerLink="contact">Contact</button>
             </li>
             <li>
-                <button mat-mini-fab color="primary" (click)="changeTheme()"><mat-icon>settings_brightness</mat-icon></button>
+                <button mat-mini-fab color="primary" (click)="changeTheme()">
+                    <mat-icon>settings_brightness</mat-icon>
+                </button>
             </li>
 
         </ul>

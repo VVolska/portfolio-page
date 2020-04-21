@@ -19,3 +19,16 @@ mat-tab-group {
 mat-tab-group p {
   padding-top: 20px;
 }
+
+.photo-container{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 15px auto;
+  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+}
+img{
+  max-width: 100%;
+  border-radius: 1px;
+}
