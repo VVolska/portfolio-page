@@ -2,13 +2,29 @@
 @import 'my-page-light-theme';
 @import '~@angular/material/theming';
 @include mat-core();
-@include angular-material-theme($my-page-light-theme);
 .my-page-dark-theme {
   @include angular-material-theme($my-page-dark-theme);
+  button:focus{
+    //background-color: transparent;
+    background-color: #ea80fc;
+  }
 }
+.my-page-light-theme {
+  @include angular-material-theme($my-page-light-theme);
+  button:focus{
+    //background-color: transparent;
+    background-color: #ea80fc;
+  }
+
+}
+@include angular-material-theme($my-page-dark-theme);
 html, body {
-  height: 100%;
+  // height: 100%;
   margin: 0;
+  width: 100%;
+}
+html {
+  height: 100%;
 }
 
 body {
@@ -17,5 +33,9 @@ body {
 }
 
 mat-toolbar {
-  opacity: 80%;
+  opacity: 95%;
+}
+button:focus{
+  //background-color: transparent;
+  background-color: #ea80fc;
 }

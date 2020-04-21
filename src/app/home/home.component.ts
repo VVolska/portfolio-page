@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MatTabChangeEvent } from '@angular/material/tabs';
 
 @Component({
   selector: 'app-home',
@@ -7,13 +6,12 @@ import { MatTabChangeEvent } from '@angular/material/tabs';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() {
   }
 
-  public executeSelectedChange( $event: MatTabChangeEvent ) {
-    console.log($event);
+  ngOnInit(): void {
+    $(document).ready(() => {
+      $('.parallax').parallax();
+    });
   }
 }

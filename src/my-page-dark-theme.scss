@@ -1,5 +1,5 @@
 @import '~@angular/material/theming';
-$my-page-dark-theme-primary: mat-palette($mat-blue);
+$my-page-dark-theme-primary: mat-palette($mat-grey, 800);
 $my-page-dark-theme-accent: mat-palette($mat-orange, A200, A100, A400);
 $my-page-dark-theme-warn: mat-palette($mat-red);
 $my-page-dark-theme: mat-dark-theme($my-page-dark-theme-primary, $my-page-dark-theme-accent, $my-page-dark-theme-warn);
