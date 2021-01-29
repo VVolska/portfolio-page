@@ -5,10 +5,10 @@
         </button>
     </div>
     <div *ngIf="getTheme() == 'my-page-light-theme'; else logo_white">
-        <a routerLink="/home"><img src="../../../assets/images/logo_black.png" class="logo"></a>
+        <a routerLink="/about-me"><img src="../../../assets/images/logo_black.png" class="logo"></a>
     </div>
     <ng-template #logo_white>
-        <a routerLink="/home"><img src="../../../assets/images/logo_white.png" class="logo"></a>
+        <a routerLink="/about-me"><img src="../../../assets/images/logo_white.png" class="logo"></a>
     </ng-template>
     <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
         <ul fxLayout fxLayoutGap="15px" class="navigation-items">
