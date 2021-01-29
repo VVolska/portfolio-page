@@ -39,11 +39,41 @@ button:focus{
   //background-color: transparent;
   background-color: #ea80fc;
 }
-.parallax-container{
-  height: 400px;
-}
+
 .parallax{
   height: -700px;
   -webkit-transform: translateY(-30%);
   transform: translateY(-30%);
+}
+
+@media only screen and (min-width: 901px) {
+  .parallax-container {
+    max-height: 400px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .parallax-container {
+    max-height: 300px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .parallax-container {
+    max-height: 200px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .parallax-container {
+    max-height: 150px;
+  }
+}
+
+.parallax-image{
+  max-width: 100%;
+}
+
+.text-center{
+  text-align: center;
 }
