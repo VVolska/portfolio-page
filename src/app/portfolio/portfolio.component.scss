@@ -38,15 +38,16 @@ div {
 
 @media only screen and (min-width: 400px) {
   #project-name-text {
-    font-size: 50px;
+    font-size: x-large;
     color: blueviolet;
-    height: 90px;
+   // height: 90px;
     text-align: center;
-    margin-top: 70px;
+   // margin-top: 70px;
+    margin-top: 20px;
   }
 
   .mat-list-option {
-    height: 80px;
+   // height: 80px;
   }
 }
 
