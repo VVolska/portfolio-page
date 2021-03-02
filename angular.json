@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "my-page2": {
+    "portfolio-page": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/my-page2",
+            "outputPath": "dist/portfolio-page",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "my-page2:build"
+            "browserTarget": "portfolio-page:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "my-page2:build:production"
+              "browserTarget": "portfolio-page:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "my-page2:build"
+            "browserTarget": "portfolio-page:build"
           }
         },
         "test": {
@@ -115,18 +115,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "my-page2:serve"
+            "devServerTarget": "portfolio-page:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "my-page2:serve:production"
+              "devServerTarget": "portfolio-page:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "my-page2",
+  "defaultProject": "portfolio-page",
   "cli": {
     "analytics": false
   }
