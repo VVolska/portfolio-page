@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Live example
 
-Live example can be seen here --> https://joannawolska.netlify.app/about-me
+Live example can be seen here --> https://joannawolska.netlify.app
 
 ## Development server
 
